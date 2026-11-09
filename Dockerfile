@@ -1,4 +1,4 @@
-FROM alpine:3.12
+FROM arm32v7/alpine:3.12
 
 LABEL \
     org.opencontainers.image.title="udp2raw" \

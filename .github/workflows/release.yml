@@ -1,13 +1,15 @@
-name: Docker Publish
+name: Docker Package
 
 on:
+  workflow_dispatch: 
+  
   release:
     types:
       - published
 
 env:
-  USERNAME: akafeng
-  REPOSITORY: udp2raw
+  USERNAME: invictusmindless
+  REPOSITORY: docker-udp2raw-arm
   PACKAGE_REGISTRY: ghcr.io
 
 jobs:

@@ -1,7 +1,7 @@
 FROM arm32v7/alpine:latest
 
 LABEL \
-    org.opencontainers.image.title="docker-udp2raw-arm" \
+    org.opencontainers.image.title="udp2raw-arm" \
     org.opencontainers.image.authors="akafeng <i@sjy.im>" \
     org.opencontainers.image.source="https://github.com/akafeng/docker-udp2raw"
 

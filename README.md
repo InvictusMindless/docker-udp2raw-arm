@@ -10,14 +10,8 @@
 </p>
 
 
-### arm
+### Remote image
 
 ```bash
 ghcr.io/invictusmindless/docker-udp2raw-arm:main
-```
-
-### arm64
-
-```bash
-ghcr.io/invictusmindless/docker-udp2raw-arm:arm64
 ```

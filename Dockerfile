@@ -1,4 +1,4 @@
-FROM arm32v7/alpine:latest
+FROM arm64v8/alpine:latest
 
 LABEL \
     org.opencontainers.image.title="udp2raw-arm" \

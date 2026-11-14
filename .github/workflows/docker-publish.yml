@@ -6,8 +6,6 @@ name: Docker
 # documentation.
 
 on:
-  schedule:
-    - cron: '19 14 * * *'
   push:
     branches: [ "main" ]
     # Publish semver tags as releases.
@@ -20,8 +18,6 @@ env:
   REGISTRY: ghcr.io
   # github.repository as <account>/<repo>
   IMAGE_NAME: ${{ github.repository }}
-  USERNAME: invictusmindless
-  REPOSITORY: docker-udp2raw-arm
 
 
 jobs:
@@ -80,7 +76,7 @@ jobs:
           context: .
           push: ${{ github.event_name != 'pull_request' }}
           platforms: linux/arm
-          tags: ${{ env.REGISTRY }}/${{ env.USERNAME }}/${{ env.REPOSITORY }}
+          tags: ${{ steps.meta.outputs.tags }}
           labels: ${{ steps.meta.outputs.labels }}
           cache-from: type=gha
           cache-to: type=gha,mode=max
